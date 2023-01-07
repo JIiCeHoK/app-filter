@@ -1,0 +1,27 @@
+.container {
+    padding-bottom: 29px;
+    padding-top: 40px;
+    font-size: 16px;
+    border-bottom: 1px solid #a5a5a5;
+    & > #name {
+        font-weight: 500;
+        font-size: 20px;
+        padding-bottom: 29px;
+    }
+    & span {
+        font-weight: 400;
+        font-size: 16px;
+        color: #2962ff;
+        padding-left: 104px;
+    }
+    & > :not(:first-child) {
+        display: flex;
+        & :first-child {
+            min-width: 400px;
+        }
+    }
+}
+
+app-svg-icon{
+    margin-left: 23px;
+}

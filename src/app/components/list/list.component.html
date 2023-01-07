@@ -1,0 +1,12 @@
+<div *ngIf="shipsData" class="container">
+    <div id="title">SpaceX Ships</div>
+    <div *ngIf="loading">loading</div>
+    <div>
+        <div *ngFor="let ship of shipsData">
+            <p>
+                <app-list-item [ship]="ship"></app-list-item>
+            </p>
+        </div>
+        <app-pagination></app-pagination>
+    </div>
+</div>

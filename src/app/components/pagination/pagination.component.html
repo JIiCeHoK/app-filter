@@ -1,0 +1,5 @@
+<div *ngIf="page$ | async as page">
+    <app-svg-icon [iconType]="'chevron'" [rotate]="180"></app-svg-icon>
+    {{ page }}
+    <app-svg-icon [iconType]="'chevron'"></app-svg-icon>
+</div>

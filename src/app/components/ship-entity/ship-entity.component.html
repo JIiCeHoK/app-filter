@@ -1,0 +1,27 @@
+<div *ngIf="ship$ | async as ship" class="container">
+    <div id="back" routerLink="/">
+        <app-svg-icon [iconType]="'arrow'" [rotate]="180"></app-svg-icon>
+        Вернуться
+    </div>
+    <div id="name">
+        {{ ship.name }}
+    </div>
+    <div class="grid">
+        <div>Тип</div>
+        <span>{{ ship.type }}</span>
+
+        <div>Порт</div>
+        <span>{{ ship.home_port }}</span>
+        <!--  -->
+        <div>Вес</div>
+        <span>{{ ship.weight_kg }}</span>
+
+        <div>Год</div>
+        <span>{{ ship.year_built }}</span>
+    </div>
+    <div class="missions">
+        <div>Миссии</div>
+
+        <span *ngFor="let mission of ship.missions">{{ mission.name }}, </span>
+    </div>
+</div>

@@ -1,0 +1,69 @@
+<ng-container *ngIf="iconType === 'arrow'" [ngSwitch]="rotate">
+    <svg
+        *ngSwitchCase="180"
+        transform="rotate(180)"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#2962FF"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-arrow-right"
+    >
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+    </svg>
+    <svg
+        *ngSwitchDefault
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#2962FF"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-arrow-right"
+    >
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+    </svg>
+</ng-container>
+<!--  -->
+<ng-container *ngIf="iconType === 'chevron'" [ngSwitch]="rotate">
+    <svg
+        *ngSwitchDefault
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-chevron-right"
+    >
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+    <svg
+        *ngSwitchCase="180"
+        transform="rotate(180)"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-chevron-right"
+    >
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</ng-container>

@@ -1,0 +1,45 @@
+.container {
+    padding: 48px 0 0 64px;
+    width: 60%;
+    & #back {
+        user-select: none;
+        cursor: pointer;
+        width: max-content;
+        display: flex;
+        align-items: flex-start;
+
+        font-weight: 400;
+        font-size: 14px;
+        color: #2962ff;
+        & > :first-child {
+            padding-right: 8px;
+        }
+    }
+    & #name {
+        font-weight: 500;
+        font-size: 28px;
+        padding: 22px 0 53px 0;
+    }
+    & span {
+        font-weight: 400;
+        font-size: 16px;
+        color: #2962ff;
+    }
+}
+
+.missions {
+    padding-top: 40px;
+    & > :first-child {
+        padding-bottom: 22px;
+    }
+    & > span {
+        line-height: 32px;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 0px;
+}

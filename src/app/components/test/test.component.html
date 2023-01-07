@@ -1,0 +1,12 @@
+<!-- <div *ngIf="loading">Loading...</div>
+<div *ngIf="error">Error :(</div>
+<div *ngIf="rates">
+    <div *ngFor="let rate of rates">
+        <p>{{ rate.name }}</p>
+    </div>
+</div> -->
+<ng-component *ngIf="list$ | async as data">
+    <div>
+        {{ data.data | json }}
+    </div>
+</ng-component>

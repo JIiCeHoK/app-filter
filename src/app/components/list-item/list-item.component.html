@@ -1,0 +1,19 @@
+<div class="container">
+    <div id="name">
+        {{ ship.name }}
+        <app-svg-icon
+            [routerLink]="['/ship', ship.id]"
+            [iconType]="'arrow'"
+        ></app-svg-icon>
+    </div>
+
+    <div>
+        <div>
+            Тип <span>{{ ship.type }}</span>
+        </div>
+        <div>
+            Порт <span>{{ ship.home_port }}</span>
+        </div>
+    </div>
+</div>
+
